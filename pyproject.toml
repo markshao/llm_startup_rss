@@ -1,0 +1,19 @@
+[tool.poetry]
+name = "llm-startup-rss"
+version = "0.1.0"
+description = "rss aggregation of llm startup list"
+authors = ["markshao <shaoyuliang@qq.com>"]
+readme = "README.md"
+packages = [{include = "llm_startup_rss"}]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+duckdb = "^1.2.1"
+
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^8.3.5"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
